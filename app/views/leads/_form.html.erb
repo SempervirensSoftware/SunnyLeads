@@ -1,0 +1,61 @@
+<%= form_for(@lead) do |f| %>
+  <% if @lead.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
+
+      <ul>
+      <% @lead.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    First Name:<br />
+    <%= f.text_field :firstName %>
+  </div>
+  <div class="field">
+    Last Name:<br />
+    <%= f.text_field :lastName %>
+  </div>
+  <div class="field">
+    Sex:<br />
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    Family Size:<br />
+    <%= f.text_field :familySize %>
+  </div>
+  <div class="field">
+    Street Address:<br />
+    <%= f.text_field :streetAddress %>
+  </div>
+  <div class="field">
+    City:<br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    State:<br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    Zip:<br />
+    <%= f.text_field :zip %>
+  </div>
+  <div class="field">
+    Phone:<br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    Email:<br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    Time To Call:<br />
+    <%= f.text_field :timeToCall %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
