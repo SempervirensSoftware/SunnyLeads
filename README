@@ -1,4 +1,4 @@
-== Welcome to Project Jackalope!
+== Welcome to Project Jackalope ~!!!!!
 
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
@@ -29,10 +29,10 @@ link:files/vendor/rails/actionpack/README.html.
 == Getting Started
 
 1. At the command prompt, create a new Rails application:
-       &amp;amp;lt;tt&amp;amp;gt;rails new myapp&amp;amp;lt;/tt&amp;amp;gt; (where &amp;amp;lt;tt&amp;amp;gt;myapp&amp;amp;lt;/tt&amp;amp;gt; is the application name)
+       &amp;amp;amp;lt;tt&amp;amp;amp;gt;rails new myapp&amp;amp;amp;lt;/tt&amp;amp;amp;gt; (where &amp;amp;amp;lt;tt&amp;amp;amp;gt;myapp&amp;amp;amp;lt;/tt&amp;amp;amp;gt; is the application name)
 
-2. Change directory to &amp;amp;lt;tt&amp;amp;gt;myapp&amp;amp;lt;/tt&amp;amp;gt; and start the web server:
-       &amp;amp;lt;tt&amp;amp;gt;cd myapp; rails server&amp;amp;lt;/tt&amp;amp;gt; (run with --help for options)
+2. Change directory to &amp;amp;amp;lt;tt&amp;amp;amp;gt;myapp&amp;amp;amp;lt;/tt&amp;amp;amp;gt; and start the web server:
+       &amp;amp;amp;lt;tt&amp;amp;amp;gt;cd myapp; rails server&amp;amp;amp;lt;/tt&amp;amp;amp;gt; (run with --help for options)
 
 3. Go to http://localhost:3000/ and you'll see:
        "Welcome aboard: You're riding Ruby on Rails!"
@@ -57,7 +57,7 @@ shown in the browser on requests from 127.0.0.1.
 You can also log your own messages directly into the log file from your code
 using the Ruby logger class from inside your controllers. Example:
 
-  class WeblogController &amp;amp;lt; ActionController::Base
+  class WeblogController &amp;amp;amp;lt; ActionController::Base
     def destroy
       @weblog = Weblog.find(params[:id])
       @weblog.destroy
@@ -87,9 +87,9 @@ Debugger support is available through the debugger command when you start your
 Mongrel or WEBrick server with --debugger. This means that you can break out of
 execution at any point in the code, investigate and change the model, and then,
 resume execution! You need to install ruby-debug to run the server in debugging
-mode. With gems, use &amp;amp;lt;tt&amp;amp;gt;sudo gem install ruby-debug&amp;amp;lt;/tt&amp;amp;gt;. Example:
+mode. With gems, use &amp;amp;amp;lt;tt&amp;amp;amp;gt;sudo gem install ruby-debug&amp;amp;amp;lt;/tt&amp;amp;amp;gt;. Example:
 
-  class WeblogController &amp;amp;lt; ActionController::Base
+  class WeblogController &amp;amp;amp;lt; ActionController::Base
     def index
       @posts = Post.find(:all)
       debugger
@@ -99,19 +99,19 @@ mode. With gems, use &amp;amp;lt;tt&amp;amp;gt;sudo gem install ruby-debug&amp;a
 So the controller will accept the action, run the first line, then present you
 with a IRB prompt in the server window. Here you can do things like:
 
-  &amp;amp;gt;&amp;amp;gt; @posts.inspect
-  =&amp;amp;gt; "[#&amp;amp;lt;Post:0x14a6be8
-          @attributes={"title"=&amp;amp;gt;nil, "body"=&amp;amp;gt;nil, "id"=&amp;amp;gt;"1"}&amp;amp;gt;,
-       #&amp;amp;lt;Post:0x14a6620
-          @attributes={"title"=&amp;amp;gt;"Rails", "body"=&amp;amp;gt;"Only ten..", "id"=&amp;amp;gt;"2"}&amp;amp;gt;]"
-  &amp;amp;gt;&amp;amp;gt; @posts.first.title = "hello from a debugger"
-  =&amp;amp;gt; "hello from a debugger"
+  &amp;amp;amp;gt;&amp;amp;amp;gt; @posts.inspect
+  =&amp;amp;amp;gt; "[#&amp;amp;amp;lt;Post:0x14a6be8
+          @attributes={"title"=&amp;amp;amp;gt;nil, "body"=&amp;amp;amp;gt;nil, "id"=&amp;amp;amp;gt;"1"}&amp;amp;amp;gt;,
+       #&amp;amp;amp;lt;Post:0x14a6620
+          @attributes={"title"=&amp;amp;amp;gt;"Rails", "body"=&amp;amp;amp;gt;"Only ten..", "id"=&amp;amp;amp;gt;"2"}&amp;amp;amp;gt;]"
+  &amp;amp;amp;gt;&amp;amp;amp;gt; @posts.first.title = "hello from a debugger"
+  =&amp;amp;amp;gt; "hello from a debugger"
 
 ...and even better, you can examine how your runtime objects actually work:
 
-  &amp;amp;gt;&amp;amp;gt; f = @posts.first
-  =&amp;amp;gt; #&amp;amp;lt;Post:0x13630c4 @attributes={"title"=&amp;amp;gt;nil, "body"=&amp;amp;gt;nil, "id"=&amp;amp;gt;"1"}&amp;amp;gt;
-  &amp;amp;gt;&amp;amp;gt; f.
+  &amp;amp;amp;gt;&amp;amp;amp;gt; f = @posts.first
+  =&amp;amp;amp;gt; #&amp;amp;amp;lt;Post:0x13630c4 @attributes={"title"=&amp;amp;amp;gt;nil, "body"=&amp;amp;amp;gt;nil, "id"=&amp;amp;amp;gt;"1"}&amp;amp;amp;gt;
+  &amp;amp;amp;gt;&amp;amp;amp;gt; f.
   Display all 152 possibilities? (y or n)
 
 Finally, when you're ready to resume execution, you can enter "cont".
@@ -125,18 +125,18 @@ configured, just like it is when the application is running. You can inspect
 domain models, change values, and save to the database. Starting the script
 without arguments will launch it in the development environment.
 
-To start the console, run &amp;amp;lt;tt&amp;amp;gt;rails console&amp;amp;lt;/tt&amp;amp;gt; from the application
+To start the console, run &amp;amp;amp;lt;tt&amp;amp;amp;gt;rails console&amp;amp;amp;lt;/tt&amp;amp;amp;gt; from the application
 directory.
 
 Options:
 
-* Passing the &amp;amp;lt;tt&amp;amp;gt;-s, --sandbox&amp;amp;lt;/tt&amp;amp;gt; argument will rollback any modifications
+* Passing the &amp;amp;amp;lt;tt&amp;amp;amp;gt;-s, --sandbox&amp;amp;amp;lt;/tt&amp;amp;amp;gt; argument will rollback any modifications
   made to the database.
 * Passing an environment name as an argument will load the corresponding
-  environment. Example: &amp;amp;lt;tt&amp;amp;gt;rails console production&amp;amp;lt;/tt&amp;amp;gt;.
+  environment. Example: &amp;amp;amp;lt;tt&amp;amp;amp;gt;rails console production&amp;amp;amp;lt;/tt&amp;amp;amp;gt;.
 
 To reload your controllers and models after launching the console run
-&amp;amp;lt;tt&amp;amp;gt;reload!&amp;amp;lt;/tt&amp;amp;gt;
+&amp;amp;amp;lt;tt&amp;amp;amp;gt;reload!&amp;amp;amp;lt;/tt&amp;amp;amp;gt;
 
 More information about irb can be found at:
 link:http://www.rubycentral.com/pickaxe/irb.html
@@ -144,11 +144,11 @@ link:http://www.rubycentral.com/pickaxe/irb.html
 
 == dbconsole
 
-You can go to the command line of your database directly through &amp;amp;lt;tt&amp;amp;gt;rails
-dbconsole&amp;amp;lt;/tt&amp;amp;gt;. You would be connected to the database with the credentials
+You can go to the command line of your database directly through &amp;amp;amp;lt;tt&amp;amp;amp;gt;rails
+dbconsole&amp;amp;amp;lt;/tt&amp;amp;amp;gt;. You would be connected to the database with the credentials
 defined in database.yml. Starting the script without arguments will connect you
 to the development database. Passing an argument will connect you to a different
-database, like &amp;amp;lt;tt&amp;amp;gt;rails dbconsole production&amp;amp;lt;/tt&amp;amp;gt;. Currently works for MySQL,
+database, like &amp;amp;amp;lt;tt&amp;amp;amp;gt;rails dbconsole production&amp;amp;amp;lt;/tt&amp;amp;amp;gt;. Currently works for MySQL,
 PostgreSQL and SQLite 3.
 
 == Description of Contents
@@ -210,8 +210,8 @@ app/views
 app/views/layouts
   Holds the template files for layouts to be used with views. This models the
   common header/footer method of wrapping views. In your views, define a layout
-  using the &amp;amp;lt;tt&amp;amp;gt;layout :default&amp;amp;lt;/tt&amp;amp;gt; and create a file named default.html.erb.
-  Inside default.html.erb, call &amp;amp;lt;% yield %&amp;amp;gt; to render the view using this
+  using the &amp;amp;amp;lt;tt&amp;amp;amp;gt;layout :default&amp;amp;amp;lt;/tt&amp;amp;amp;gt; and create a file named default.html.erb.
+  Inside default.html.erb, call &amp;amp;amp;lt;% yield %&amp;amp;amp;gt; to render the view using this
   layout.
 
 app/helpers
@@ -229,7 +229,7 @@ db
 
 doc
   This directory is where your application documentation will be stored when
-  generated using &amp;amp;lt;tt&amp;amp;gt;rake doc:app&amp;amp;lt;/tt&amp;amp;gt;
+  generated using &amp;amp;amp;lt;tt&amp;amp;amp;gt;rake doc:app&amp;amp;amp;lt;/tt&amp;amp;amp;gt;
 
 lib
   Application specific libraries. Basically, any kind of custom code that
