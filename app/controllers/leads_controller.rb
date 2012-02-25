@@ -41,7 +41,7 @@ class LeadsController < ApplicationController
   # POST /leads.xml
   def create
     @lead = Lead.new(params[:lead])
-
+#hello
     respond_to do |format|
       if @lead.save
         format.html { redirect_to(@lead, :notice => 'Lead was successfully created.') }
