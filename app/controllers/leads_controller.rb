@@ -10,6 +10,7 @@ class LeadsController < ApplicationController
     end
   end
 
+  # here's the demo
   # GET /leads/1
   # GET /leads/1.xml
   def show
