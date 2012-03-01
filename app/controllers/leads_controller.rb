@@ -10,7 +10,7 @@ class LeadsController < ApplicationController
     end
   end
 
-  # here's the demo2222
+  # here's the alpha
   # GET /leads/1
   # GET /leads/1.xml
   def show
