@@ -3,7 +3,7 @@ class LeadsController < ApplicationController
   # GET /leads.xml
   def index
     @leads = Lead.all
-    @foo
+    @foo = foo
 
     respond_to do |format|
       format.html # index.html.erb
