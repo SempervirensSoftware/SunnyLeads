@@ -3,7 +3,7 @@ class LeadsController < ApplicationController
   # GET /leads.xml
   def index
     @leads = Lead.all
-    @foo = foo
+    @foo = foohhhggf
     #foofiihfrtgtfdhubcdf
 
     respond_to do |format|
