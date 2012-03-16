@@ -1,6 +1,12 @@
 class LeadsController < ApplicationController
   # GET /leads
   # GET /leads.xml
+  
+  def blah
+    a = 1
+    
+    
+    
   def index
     @leads = Lead.all
     @foo = foohhhggf
@@ -9,9 +15,11 @@ class LeadsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @leads }
-      
+
     end
   end
+  
+  
 
   # here's the alpha2
   # GET /leads/1
