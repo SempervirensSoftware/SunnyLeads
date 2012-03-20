@@ -1,15 +1,10 @@
 class LeadsController < ApplicationController
   # GET /leads
   # GET /leads.xml
-  
-  def blah
-    a = 1
-    
-    
     
   def index
     @leads = Lead.all
-    @foo = foohhhggf
+    @foo = foo
     #foofiihfrtgtfdhubcdf
 
     respond_to do |format|
