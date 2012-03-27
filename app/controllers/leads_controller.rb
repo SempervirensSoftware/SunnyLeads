@@ -5,7 +5,7 @@ class LeadsController < ApplicationController
   def index
     @leads = Lead.all
     @foo = foo
-    #foofiihfrtgtfdhubcdf
+    #foofiihubcdf
 
     respond_to do |format|
       format.html # index.html.erb
