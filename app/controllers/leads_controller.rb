@@ -4,8 +4,6 @@ class LeadsController < ApplicationController
     
   def index
     @leads = Lead.all
-    @foo = foo
-    #foofiifffffhubcdf
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,8 +12,6 @@ class LeadsController < ApplicationController
     end
   end
   
-  
-
   # here's the alpha2
   # GET /leads/1
   # GET /leads/1.xml
@@ -33,7 +29,6 @@ class LeadsController < ApplicationController
   # GET /leads/new.xml
   def new
     @lead = Lead.new
-
 
     respond_to do |format|
       1 + 1
