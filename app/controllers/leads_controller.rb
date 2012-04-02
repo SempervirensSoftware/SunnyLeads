@@ -19,7 +19,6 @@ class LeadsController < ApplicationController
     @lead = Lead.find(params[:id])
 
     respond_to do |format|
-    f
       format.html # show.html.erb
       format.xml  { render :xml => @lead }
     end
