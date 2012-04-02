@@ -12,7 +12,6 @@ class LeadsController < ApplicationController
     end
   end
   
-  # here's the alpha2
   # GET /leads/1
   # GET /leads/1.xml
   def show
