@@ -30,7 +30,6 @@ class LeadsController < ApplicationController
     @lead = Lead.new
 
     respond_to do |format|
-      1 + 1
       format.html # new.html.erb
       format.xml  { render :xml => @lead }
     end
