@@ -8,7 +8,6 @@ class LeadsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @leads }
-      format.json {render :json => @leads}
     end
   end
   
