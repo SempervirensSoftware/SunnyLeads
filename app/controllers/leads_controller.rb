@@ -26,6 +26,7 @@ class LeadsController < ApplicationController
   # GET /leads/new.xml
   def new
     @lead = Lead.new
+    @lead.close
 
     respond_to do |format|
       format.html # new.html.erb
